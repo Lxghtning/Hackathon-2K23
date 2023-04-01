@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    resize: none;
+    font-family: 'Poppins';
+    /* -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+}
+
+.Dashboard{
+    height: 170vh;
+}
+/* -- Nav Bar -- */
+nav {
+    position: sticky;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 1200px;
+}
+
+nav ul li {
+    margin-top: 7px;
+    margin-left: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.active{
+    color: black;
+    background-color: white;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+.name {
+    margin-top: -35px;
+    margin-left: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.name:hover {
+    cursor: default;
+}
+
+.headI{
+    text-decoration: underline;
+    transform: rotate(-90deg);
+    margin-top: -750px;
+    margin-left: -550px;
+}
+
+.headO{
+    text-decoration: underline;
+    transform: rotate(-90deg);
+    margin-top: -750px;
+    margin-left: -550px;
+}
+
+canvas{
+    border: 3px solid black;
+    box-shadow: 1px 1px 0px #999,
+                2px 2px 0px #999,
+                3px 3px 0px #999,
+                4px 4px 0px #999,
+                5px 5px 0px #999,
+                6px 6px 0px #999;   
+}
+
+.chartdiv{
+    position: absolute;
+    margin-top: -1115px;
+}
+
+.output_chartdiv{
+    position: absolute;
+}
+
+.dashhead{
+    margin-left: 350px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.heads{
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 50px;
+    display: inline-flex;
+}
+
+.firstheads{
+    margin-left: 50px;
+    margin-right: 550px;
+}
+
+.int{
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.op{
+    text-decoration: underline;
+}
+
+.secondheads{
+    margin-top: 50px;
+    margin-left: -110px;
+}
+
+.pth{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.ptdetails{
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 500px;
+    width: 1500px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 0px #999,
+    2px 2px 0px #999,
+    3px 3px 0px #999,
+    4px 4px 0px #999,
+    5px 5px 0px #999,
+    6px 6px 0px #999;   
+}
+
+.delptn{
+    border: 2px solid black;
+    background-color: red;
+    padding: 5px;
+    font-size: 20px;
+    width: 300px;
+    margin-left: 600px;
+    margin-top: 90px;
+}
+
+
+.delptn:hover{
+    padding: 8px;
+    cursor: pointer;    
+}
+
+.pth{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.patientform{
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    height: 570px;
+    width: 400px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 0px #999,
+                2px 2px 0px #999,
+                3px 3px 0px #999,
+                4px 4px 0px #999,
+                5px 5px 0px #999,
+                6px 6px 0px #999;
+}
+
+
+input{
+    text-align: center;
+}
+
+.intake{
+    margin-top: 30px;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-left: 50px;
+}
+
+.intakediv{
+    display:flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 50px;
+    height: 25px;
+    width: 250px;
+}
+
+.intakediv>input{
+    margin-top:15px;
+}
+
+.output{    
+    margin-top: 160px;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-left: 50px;
+}
+
+.outputdiv{
+    display:flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 250px;
+    height: 25px;
+}
+
+.outputdiv>input{
+    margin-top:15px;
+
+}
+
+
+.submitp{
+    margin-top: 195px;
+    margin-left: 50px;
+    padding: 5px;
+    width: 300px;
+    border-radius: 12px;
+}
+    
+.submitp:hover{
+    background-color:aquamarine;
+    transition: ease-in;
+    cursor: pointer;
+}
+
+
+/*Media Queries*/
+@media (max-width: 480px) and (min-width: 320px) {
+
+    .name{
+        display:none;
+    }
+    .greet {
+        font-size: 45px;
+        margin-left: 20px;
+    
+    }
+
+    .texts {
+        margin-left: 140px;
+        font-size: 35px;
+        margin-top: -80px;
+    }
+
+    
+    
+    .container {
+        display: inline-block;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 9px 0;
+        margin-left: 15px;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 17px) rotate(-225deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(225deg);
+    }
+
+    .newnav {
+        width: 250px;
+        background-color: black;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    nav ul {
+        display: block;
+        margin-left: 100px;
+        margin-top: -30vh;
+    }
+
+    nav ul li {
+        margin-top: -100px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: none;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        padding: 10px 10px;
+        border-radius: 20px;
+    }
+}
